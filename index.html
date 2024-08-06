@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Car Service</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Rental Car Service</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#cars">Cars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4">Find Your Perfect Rental Car</h1>
+        <h3>Wide variety of cars available for rent at affordable prices</h3>
+        <a class="btn btn-primary btn-lg" href="#cars" role="button">View Cars</a>
+    </div>
+</div>
+<br>
+
+<!-- Cars Section -->
+<section id="cars" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Cars</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="1 Rolls-Royce Cullinan review.jpg" class="card-img-top" alt="Car 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Model 1</h5>
+                        <p class="card-text">Great for city driving.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#car1Modal">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="L460_22MY_SV_001_GLHD_DX.avif" class="card-img-top" alt="Car 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Model 2</h5>
+                        <p class="card-text">Perfect for long drives.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#car2Modal">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="20230823034701_porsche_911_st.jpg" class="card-img-top" alt="Car 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Model 3</h5>
+                        <p class="card-text">Spacious and comfortable.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#car3Modal">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
